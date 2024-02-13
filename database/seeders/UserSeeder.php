@@ -17,9 +17,9 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Erdem',
-            'surname' => 'Yalçın',
-            'email' => 'erdem@incefikirler.com',
+            'name' => 'Bertan',
+            'surname' => 'Aslan',
+            'email' => 'bertan@bekatos.com',
             'password' => Hash::make('password'),
             'street' => 'Street',
             'street_number' => '1',
@@ -27,18 +27,6 @@ class UserSeeder extends Seeder
             'dob' => '1990-01-01',
             'eu_citizen' => true,
             'is_admin' => true,
-        ]);
-
-        User::create([
-            'name' => 'Emre',
-            'surname' => 'Kılıç',
-            'email' => 'emre@incefikirler.com',
-            'password' => Hash::make('password'),
-            'street' => 'Street',
-            'street_number' => '1',
-            'postal_code' => '12356',
-            'dob' => '1990-01-01',
-            'eu_citizen' => true,
         ]);
     }
 }
